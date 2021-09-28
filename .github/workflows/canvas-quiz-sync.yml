@@ -22,11 +22,7 @@ jobs:
           ruby-version: 2.7
 
       - name: Install gems
-        run: |
-          git clone git@github.com:learn-co-curriculum/github-to-canvas-quiz.git
-          cd github-to-canvas-quiz
-          bundle exec rake install
-          cd ..
+        run: gem install github-to-canvas-quiz
 
       # Secret stored in learn-co-curriculum Settings/Secrets
       - name: Sync from markdown
