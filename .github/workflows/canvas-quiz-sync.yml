@@ -35,3 +35,6 @@ jobs:
         env:
           CANVAS_API_KEY: ${{ secrets.CANVAS_API_KEY }}
           CANVAS_API_PATH: ${{ secrets.CANVAS_API_PATH }}
+
+      - name: Push changes
+        run: git push
