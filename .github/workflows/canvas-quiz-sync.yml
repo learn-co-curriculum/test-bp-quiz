@@ -21,6 +21,11 @@ jobs:
         with:
           ruby-version: 2.7
 
+      - name: Configure git commits to last user
+        run: |
+          git config --local user.email "$(git log --format='%ae' HEAD^!)"
+          git config --local user.name "$(git log --format='%an' HEAD^!)"
+
       - name: Install gems
         run: gem install github-to-canvas-quiz
 
