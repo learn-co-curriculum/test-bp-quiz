@@ -37,6 +37,4 @@ jobs:
           CANVAS_API_PATH: ${{ secrets.CANVAS_API_PATH }}
 
       - name: Push changes
-        run: |
-          git checkout -b canvas-sync
-          git push origin canvas-sync
+        run: git push
