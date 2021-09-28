@@ -6,8 +6,4 @@ repo: test-bp-quiz
 
 # Test Quiz
 
-Description!!
-
-run pls
-
-and make a commit
+Description
